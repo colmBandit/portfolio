@@ -204,7 +204,7 @@ section{
     position: absolute;
     top: 0;
     right: 0;
-    width: 45%;
+    width: 40%;
     height: 100%;
     background: transparent;
     transition: 3s;
@@ -438,4 +438,111 @@ section{
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span{
     width: 85%;
+}
+/* ------------------ Certifications Section ------------------ */
+.certifications{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.certifications .skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.certifications .skills-column{
+    flex: 1 1 40rem;
+}
+.certifications .skills-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+.certifications .skills-box .skills-content{
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem;
+    z-index: 1;
+}
+.certifications .skills-box .skills-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;  
+}
+.certifications .skills-box .skills-content:hover::before{
+    width: 100%;
+}
+.certifications .skills-content .progress{
+    padding: 1rem 0;
+}
+.certifications .skills-content .progress h3{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.certifications .skills-content .progress h3 span{
+    color: var(--text-color);
+}
+.certifications .skills-content .progress .bar{
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.certifications .skills-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-color);
+ 
+}
+/* ------------------ Certifications Progress Bar Widths ------------------ */
+.certifications .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 0%; 
+}
+.certifications .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 0%;
+}
+.certifications .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 0%;
+}
+.certifications .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 0%;
+}
+
+/* ------------------ PDF Link Styling in Portfolio ------------------ */
+.portfolio-content .content a{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    background: var(--main-color);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.portfolio-content .content a:hover{
+    background: var(--text-color);
+    color: var(--main-color);
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 15px;
+    outline: 2px solid var(--main-color);
 }
