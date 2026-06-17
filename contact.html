@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Malcolm Mmari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <nav id="navbar">
+    <a class="nav-logo" href="index.html">MM<span>.</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html" class="nav-active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">
+      <span>Available</span>
+      <span class="cta-dot"></span>
+    </a>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg-text" aria-hidden="true">HELLO</div>
+    <div class="container">
+      <div class="section-eyebrow">
+        <span class="mono sec-num">006</span>
+        <span class="mono sec-tag">Contact</span>
+      </div>
+      <h1 class="page-hero-title">Let's build<br /><span class="char-reveal" style="color:var(--brg-light)">something.</span></h1>
+      <p class="page-hero-sub">Open to junior roles, contracts, and collaborative projects. Remote-friendly.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-intro reveal">
+        <div class="contact-big-text">
+          Got an idea?<br/>
+          <em>Let's ship it.</em>
+        </div>
+        <div class="contact-intro-sub">
+          <p>Open to junior roles, contracts, and collaborative projects in software engineering. I respond to every message — pick your preferred channel.</p>
+          <a href="mailto:malcolmhnr@gmail.com" class="btn-grn magnetic"><span>Send an email →</span></a>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-terminal reveal">
+          <div class="ct-titlebar">
+            <div class="ct-dots"><span></span><span></span><span></span></div>
+            <span class="ct-title mono">python3 contact.py</span>
+          </div>
+          <div class="ct-body mono">
+            <div class="ct-line">
+              <span class="ct-prompt">&gt;&gt;&gt; </span><span class="ct-typed" id="ct-typed"></span><span class="ct-blink">█</span>
+            </div>
+            <div class="ct-output" id="ct-output"></div>
+          </div>
+        </div>
+
+        <div class="contact-cards reveal">
+          <p class="contact-sub">Pick your preferred channel — I respond fast.</p>
+
+          <a href="mailto:malcolmhnr@gmail.com" class="contact-card">
+            <div class="cc-icon mono">@</div>
+            <div class="cc-body">
+              <span class="cc-label mono">Email</span>
+              <span class="cc-val">malcolmhnr@gmail.com</span>
+            </div>
+            <span class="cc-arrow">↗</span>
+          </a>
+          <a href="https://wa.me/254710628802" target="_blank" class="contact-card">
+            <div class="cc-icon mono">wa</div>
+            <div class="cc-body">
+              <span class="cc-label mono">WhatsApp</span>
+              <span class="cc-val">+254 710 628 802</span>
+            </div>
+            <span class="cc-arrow">↗</span>
+          </a>
+          <a href="https://www.instagram.com/malxtechnologies/" target="_blank" class="contact-card">
+            <div class="cc-icon mono">ig</div>
+            <div class="cc-body">
+              <span class="cc-label mono">Instagram</span>
+              <span class="cc-val">@malxtechnologies</span>
+            </div>
+            <span class="cc-arrow">↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/malcolm-mmari-7346032a9/" target="_blank" class="contact-card">
+            <div class="cc-icon mono">in</div>
+            <div class="cc-body">
+              <span class="cc-label mono">LinkedIn</span>
+              <span class="cc-val">malcolm-mmari</span>
+            </div>
+            <span class="cc-arrow">↗</span>
+          </a>
+          <a href="https://github.com/colmBandit" target="_blank" class="contact-card">
+            <div class="cc-icon mono">&lt;/&gt;</div>
+            <div class="cc-body">
+              <span class="cc-label mono">GitHub</span>
+              <span class="cc-val">colmBandit</span>
+            </div>
+            <span class="cc-arrow">↗</span>
+          </a>
+          <div class="contact-avail">
+            <span class="avail-dot"></span>
+            <span class="mono">Available · Nairobi, Kenya · Remote OK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="mono">Malcolm Mmari — Software Engineer</span>
+    <div class="footer-links">
+      <a href="index.html" class="mono">Home</a>
+      <a href="portfolio.html" class="mono">Portfolio</a>
+      <a href="experience.html" class="mono">Experience</a>
+    </div>
+    <span class="mono footer-right">© 2025 · Nairobi</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

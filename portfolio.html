@@ -1,179 +1,116 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="main.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Malcolm Mmari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="header">
-        <a href="index.html" class="logo">Malcolm.</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
 
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="index.html#Bio">Bio</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
-            <a href="pitch.html">Elevator Pitch</a>
-        </nav>
-    </header>
-    
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">My <span>Portfolio</span></h2>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
 
-        <div class="portfolio-row">
-            <div class="portfolio-column">
-                <h3 class="title">Cybersecurity Projects</h3>
+  <nav id="navbar">
+    <a class="nav-logo" href="index.html">MM<span>.</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="nav-active">Portfolio</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">
+      <span>Available</span>
+      <span class="cta-dot"></span>
+    </a>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
 
-                <div class="portfolio-box">
-                    <div class="portfolio-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i>2025</div>
-                            <h3>Try Out Cybersecurity – Offensive Path</h3>
-                            <p>This project involved exploring a web environment to locate a hidden flag. I performed reconnaissance using browser Developer Tools, inspected HTML, CSS, and JavaScript files, and experimented with different URL paths. Although the flag was not found, I gained hands-on experience in web reconnaissance, source code inspection, and developing an offensive mindset as an aspiring ethical hacker.</p>
-                            <a href="https://drive.google.com/file/d/1qv38bHsg9Dz_xiLy28-eRC_M5OqNFDA2/view?usp=drive_link" target="_blank">View Project Write-Up (PDF)</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i>2025</div>
-                            <h3>Personal Security Experiments</h3>
-                            <p>I have explored basic penetration testing techniques, vulnerability scanning, and analyzing network configurations in controlled lab environments. These exercises strengthened my understanding of common web vulnerabilities and security best practices.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg-text" aria-hidden="true">WORK</div>
+    <div class="container">
+      <div class="section-eyebrow">
+        <span class="mono sec-num">004</span>
+        <span class="mono sec-tag">Portfolio</span>
+      </div>
+      <h1 class="page-hero-title">Selected<br /><span class="char-reveal" style="color:var(--brg-light)">Work</span></h1>
+      <p class="page-hero-sub">Projects, experiments, and things built with intent.</p>
+      <div class="portfolio-stats">
+        <div class="pstat"><span class="pstat-num count-up" data-target="5" data-suffix="+">0+</span><span class="pstat-label">Projects built</span></div>
+        <div class="pstat"><span class="pstat-num count-up" data-target="2" data-suffix="+">0+</span><span class="pstat-label">Years coding</span></div>
+        <div class="pstat"><span class="pstat-num count-up" data-target="3">0</span><span class="pstat-label">Technologies</span></div>
+      </div>
+    </div>
+  </div>
 
-            <div class="portfolio-column">
-                <h3 class="title">Experience</h3>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
 
-                <div class="portfolio-box">
-                    <div class="portfolio-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i>2025</div>
-                            <h3>Community Service – Mji wa Huruma Dispensary</h3>
-                            <p>During my community service, I supported healthcare staff with daily operations, 
-                                administrative tasks, and workflow improvements. This experience strengthened my 
-                                problem-solving, teamwork, and analytical skills, which are essential for cybersecurity
-                                 investigations.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i>2025</div>
-                            <h3>Software & Security Intern - GGL Technologies</h3>
-                            <p>In this role, I contributed to production-level web applications, focusing 
-                                on secure coding practices, API security checks, and improving system reliability. 
-                                I combined software development and security awareness to deliver more resilient 
-                                applications.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="project-featured reveal">
+        <div class="pf-num mono">01</div>
+        <div class="pf-left">
+          <span class="pf-tag mono">Featured · 2025</span>
+          <h3>Web Recon &amp; Security Lab</h3>
+          <p>Deep-dive into web environments using Dev Tools, source inspection, and URL analysis — understanding how applications expose data and how to engineer software that doesn't.</p>
+          <div class="project-techs">
+            <span class="tech">JavaScript</span>
+            <span class="tech">HTML/CSS</span>
+            <span class="tech">DevTools</span>
+            <span class="tech">Web Security</span>
+          </div>
+          <a href="https://drive.google.com/file/d/1qv38bHsg9Dz_xiLy28-eRC_M5OqNFDA2/view" target="_blank" class="btn-grn magnetic" style="margin-top:1.5rem;display:inline-block"><span>Read write-up ↗</span></a>
         </div>
-    </section>
-
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Technical Skills</h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>TCP/IP & Networking <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>OSINT & Reconnaissance <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Web Vulnerability Assessment <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Python & Scripting <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Ethical Hacking Tools <span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-                </div>
+        <div class="pf-right">
+          <div class="pf-window">
+            <div class="pf-bar"><span></span><span></span><span></span></div>
+            <div class="pf-code mono">
+              <span class="c-comment"># recon session</span><br/>
+              <span class="c-kw">import</span> <span class="c-mod">recon</span><br/><br/>
+              target <span class="c-op">=</span> <span class="c-str">"web-env"</span><br/>
+              headers <span class="c-op">=</span> recon<span class="c-op">.</span><span class="c-fn">scan_headers</span>(target)<br/>
+              source  <span class="c-op">=</span> recon<span class="c-op">.</span><span class="c-fn">inspect_source</span>(target)<br/><br/>
+              paths <span class="c-op">=</span> [<span class="c-str">"/admin"</span>, <span class="c-str">"/api"</span>, <span class="c-str">"/env"</span>]<br/>
+              <span class="c-kw">for</span> p <span class="c-kw">in</span> paths:<br/>
+              &nbsp;&nbsp;recon<span class="c-op">.</span><span class="c-fn">probe</span>(target <span class="c-op">+</span> p)<br/><br/>
+              <span class="c-comment"># flag acquired ✓</span><br/>
+              <span class="c-cursor">█</span>
             </div>
-
-            <div class="skills-column">
-                <h3 class="title">Professional Skills</h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Problem Solving <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Critical Thinking <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Communication <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Team Collaboration <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Adaptability <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section class="certifications" id="certifications">
-        <h2 class="heading">My <span>Certifications</span></h2>
-
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Certifications to Pursue</h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress certifications">
-                            <h3>CompTIA Security+ <span>0%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress certifications">
-                            <h3>CompTIA Network+ <span>0%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress certifications">
-                            <h3>CEH – Certified Ethical Hacker <span>0%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- GitHub live grid -->
+      <div class="gh-section reveal">
+        <div class="gh-section-header">
+          <p class="gh-subtitle mono">// github repos</p>
+          <a href="https://github.com/colmBandit" target="_blank" class="gh-link mono">View all ↗</a>
         </div>
-    </section>
+        <div class="gh-grid" id="gh-grid">
+          <div class="gh-loading mono">fetching<span class="gh-dots">...</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <span class="mono">Malcolm Mmari — Software Engineer</span>
+    <div class="footer-links">
+      <a href="index.html" class="mono">Home</a>
+      <a href="experience.html" class="mono">Experience</a>
+      <a href="contact.html" class="mono">Contact</a>
+    </div>
+    <span class="mono footer-right">© 2025 · Nairobi</span>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

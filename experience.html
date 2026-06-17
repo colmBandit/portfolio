@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Malcolm Mmari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <nav id="navbar">
+    <a class="nav-logo" href="index.html">MM<span>.</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="experience.html" class="nav-active">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">
+      <span>Available</span>
+      <span class="cta-dot"></span>
+    </a>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg-text" aria-hidden="true">XP</div>
+    <div class="container">
+      <div class="section-eyebrow">
+        <span class="mono sec-num">005</span>
+        <span class="mono sec-tag">Experience</span>
+      </div>
+      <h1 class="page-hero-title">Where I've<br /><span class="char-reveal" style="color:var(--brg-light)">Worked</span></h1>
+      <p class="page-hero-sub">Roles, responsibilities, and the stack behind them.</p>
+      <div class="portfolio-stats">
+        <div class="pstat"><span class="pstat-num count-up" data-target="2">0</span><span class="pstat-label">Companies</span></div>
+        <div class="pstat"><span class="pstat-num count-up" data-target="3">0</span><span class="pstat-label">Roles held</span></div>
+        <div class="pstat"><span class="pstat-num count-up" data-target="1">0</span><span class="pstat-label">Brand founded</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="exp-timeline-wrap">
+        <div class="exp-timeline-line"></div>
+        <div class="exp-list">
+
+        <div class="exp-row reveal">
+          <div class="exp-left">
+            <span class="exp-year mono">2025 —</span>
+            <span class="exp-type mono">Founder</span>
+          </div>
+          <div class="exp-main">
+            <h3>Founder &amp; Lead Developer</h3>
+            <div class="exp-org"><a href="https://www.instagram.com/malxtechnologies/" target="_blank" class="exp-org-link">MalxTechnologies ↗</a></div>
+            <p>Technology brand focused on software development and digital solutions. Building products, taking client work, and growing a presence in the Nairobi tech space.</p>
+          </div>
+          <div class="exp-skills">
+            <span class="tech">Freelance</span>
+            <span class="tech">Products</span>
+            <span class="tech">Brand</span>
+          </div>
+        </div>
+
+        <div class="exp-row reveal">
+          <div class="exp-left">
+            <span class="exp-year mono">2025</span>
+            <span class="exp-type mono">Contract</span>
+          </div>
+          <div class="exp-main">
+            <h3>Project Technician &amp; Backend Engineer</h3>
+            <div class="exp-org">GGL Technologies</div>
+            <p>Contracted directly after internship to lead backend development — designed server-side architecture, built and maintained APIs, and took ownership of system reliability across the full backend stack.</p>
+          </div>
+          <div class="exp-skills">
+            <span class="tech">Python</span>
+            <span class="tech">Backend</span>
+            <span class="tech">APIs</span>
+          </div>
+        </div>
+
+        <div class="exp-row reveal">
+          <div class="exp-left">
+            <span class="exp-year mono">2025</span>
+            <span class="exp-type mono">Internship</span>
+          </div>
+          <div class="exp-main">
+            <h3>Software Developer Intern</h3>
+            <div class="exp-org">GGL Technologies</div>
+            <p>Built and shipped features across production web applications over 3 months. Secure coding, API work, and real team engineering — fast enough to earn a direct contract extension.</p>
+          </div>
+          <div class="exp-skills">
+            <span class="tech">Python</span>
+            <span class="tech">Web Dev</span>
+            <span class="tech">APIs</span>
+          </div>
+        </div>
+
+        <div class="exp-row reveal">
+          <div class="exp-left">
+            <span class="exp-year mono">2025</span>
+            <span class="exp-type mono">Volunteer</span>
+          </div>
+          <div class="exp-main">
+            <h3>Community Service</h3>
+            <div class="exp-org">Mji wa Huruma Dispensary</div>
+            <p>Operational support in a healthcare environment. Strengthened cross-functional teamwork and real-world problem solving under constraints.</p>
+          </div>
+          <div class="exp-skills">
+            <span class="tech">Operations</span>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack">
+    <div class="stack-header container reveal">
+      <div class="section-eyebrow">
+        <span class="mono sec-num">003</span>
+        <span class="mono sec-tag">Stack</span>
+      </div>
+      <h2 class="sec-title">What I<br /><em>work with</em></h2>
+    </div>
+    <div class="stack-marquee-wrap reveal">
+      <div class="stack-track track-left">
+        <div class="stack-track-inner">
+          <span class="s-chip" data-cat="frontend">HTML</span>
+          <span class="s-chip" data-cat="frontend">CSS</span>
+          <span class="s-chip" data-cat="frontend">JavaScript</span>
+          <span class="s-chip" data-cat="frontend">React</span>
+          <span class="s-chip" data-cat="backend">Python</span>
+          <span class="s-chip" data-cat="backend">Node.js</span>
+          <span class="s-chip" data-cat="backend">REST APIs</span>
+          <span class="s-chip" data-cat="backend">SQL</span>
+          <span class="s-chip" data-cat="tools">Git</span>
+          <span class="s-chip" data-cat="tools">GitHub</span>
+          <span class="s-chip" data-cat="tools">VS Code</span>
+          <span class="s-chip" data-cat="tools">Linux</span>
+          <span class="s-chip" data-cat="frontend">HTML</span>
+          <span class="s-chip" data-cat="frontend">CSS</span>
+          <span class="s-chip" data-cat="frontend">JavaScript</span>
+          <span class="s-chip" data-cat="frontend">React</span>
+          <span class="s-chip" data-cat="backend">Python</span>
+          <span class="s-chip" data-cat="backend">Node.js</span>
+          <span class="s-chip" data-cat="backend">REST APIs</span>
+          <span class="s-chip" data-cat="backend">SQL</span>
+          <span class="s-chip" data-cat="tools">Git</span>
+          <span class="s-chip" data-cat="tools">GitHub</span>
+          <span class="s-chip" data-cat="tools">VS Code</span>
+          <span class="s-chip" data-cat="tools">Linux</span>
+        </div>
+      </div>
+      <div class="stack-track track-right">
+        <div class="stack-track-inner">
+          <span class="s-chip" data-cat="practice">Secure Coding</span>
+          <span class="s-chip" data-cat="practice">Testing</span>
+          <span class="s-chip" data-cat="practice">Code Review</span>
+          <span class="s-chip" data-cat="practice">API Design</span>
+          <span class="s-chip" data-cat="interest">Embedded Systems</span>
+          <span class="s-chip" data-cat="interest">Hardware</span>
+          <span class="s-chip" data-cat="interest">IoT</span>
+          <span class="s-chip" data-cat="interest">Smart Devices</span>
+          <span class="s-chip" data-cat="frontend">TypeScript</span>
+          <span class="s-chip" data-cat="backend">PostgreSQL</span>
+          <span class="s-chip" data-cat="practice">Web Performance</span>
+          <span class="s-chip" data-cat="practice">Secure Coding</span>
+          <span class="s-chip" data-cat="practice">Testing</span>
+          <span class="s-chip" data-cat="practice">Code Review</span>
+          <span class="s-chip" data-cat="practice">API Design</span>
+          <span class="s-chip" data-cat="interest">Embedded Systems</span>
+          <span class="s-chip" data-cat="interest">Hardware</span>
+          <span class="s-chip" data-cat="interest">IoT</span>
+          <span class="s-chip" data-cat="interest">Smart Devices</span>
+          <span class="s-chip" data-cat="frontend">TypeScript</span>
+          <span class="s-chip" data-cat="backend">PostgreSQL</span>
+          <span class="s-chip" data-cat="practice">Web Performance</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="stack-legend reveal">
+        <span class="legend-item"><span class="legend-dot" data-cat="frontend"></span>Frontend</span>
+        <span class="legend-item"><span class="legend-dot" data-cat="backend"></span>Backend</span>
+        <span class="legend-item"><span class="legend-dot" data-cat="tools"></span>Tooling</span>
+        <span class="legend-item"><span class="legend-dot" data-cat="practice"></span>Practices</span>
+        <span class="legend-item"><span class="legend-dot" data-cat="interest"></span>Interests</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="mono">Malcolm Mmari — Software Engineer</span>
+    <div class="footer-links">
+      <a href="index.html" class="mono">Home</a>
+      <a href="portfolio.html" class="mono">Portfolio</a>
+      <a href="contact.html" class="mono">Contact</a>
+    </div>
+    <span class="mono footer-right">© 2025 · Nairobi</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
